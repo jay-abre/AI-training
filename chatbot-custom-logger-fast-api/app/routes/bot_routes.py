@@ -13,7 +13,7 @@ async def log_bot_event(event: BotEvent, db = Depends(get_db)):
     event_dict = event.dict()
     try:
         result = collection.insert_one(event_dict)
-        event_dict["_id"] = str(result.inserted_id)  # Convert ObjectId to string
+        event_dict["_id"] = str(result.inserted_id)  
         logger.info(f"Bot event logged: {event_dict}")
         return {"message": "Bot event logged successfully", "event": event_dict}
     except PyMongoError as e:
