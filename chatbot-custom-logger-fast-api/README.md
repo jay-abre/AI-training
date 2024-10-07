@@ -31,7 +31,11 @@ A FastAPI application for logging chatbot and user events to MongoDB.
 3. **Install dependencies:**:
     ```bash
     pip install -r requirements.txt
-4. **Run the application**:
+4. **Start mongo db with docker compose**
+    ```bash
+    docker-compose up -d
+
+5. **Run the application**:
      ```bash
     uvicorn app.main:app --reload
 
