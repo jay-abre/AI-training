@@ -18,11 +18,13 @@ A FastAPI application for logging chatbot and user events to MongoDB.
     ```bash
     python -m venv venv
  
-    //On Windows
+    ***On Windows***
+    ```bash
     venv\Scripts\activate
     (`.\venv\Scripts\activate`)
  
-    //On macOS/Linux
+    ***On macOS/Linux***
+    ```bash
     source venv/bin/activate
 3. **Install dependencies:**:
     ```bash
@@ -30,3 +32,5 @@ A FastAPI application for logging chatbot and user events to MongoDB.
 4. **Run the application**:
      ```bash
     uvicorn app.main:app --reload
+
+    
