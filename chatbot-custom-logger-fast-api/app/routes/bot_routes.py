@@ -3,7 +3,8 @@ from app.models import BotEvent
 from app.database import get_db
 from bson import ObjectId
 from pymongo.errors import PyMongoError
-from app.logging import logger
+from app.custom_logging import logger
+
 
 bot_router = APIRouter()
 
