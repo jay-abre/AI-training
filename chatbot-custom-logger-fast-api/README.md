@@ -17,12 +17,12 @@ A FastAPI application for logging chatbot and user events to MongoDB.
 2. **Create and activate a virtual environment**:
     ```bash
     python -m venv venv
-    ```bash
-    ## On Windows
+ 
+    //On Windows
     venv\Scripts\activate
     (`.\venv\Scripts\activate`)
-    ```bash
-    ## On macOS/Linux
+ 
+    //On macOS/Linux
     source venv/bin/activate
 3. **Install dependencies:**:
     ```bash
