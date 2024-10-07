@@ -15,10 +15,13 @@ A FastAPI application for logging chatbot and user events to MongoDB.
    git clone https://github.com/yourusername/chatbot-custom-logger-fast-api.git
    cd chatbot-custom-logger-fast-api
 2. **Create and activate a virtual environment**:
+    ```bash
     python -m venv venv
+    ```bash
     ## On Windows
     venv\Scripts\activate
     (`.\venv\Scripts\activate`)
+    ```bash
     ## On macOS/Linux
     source venv/bin/activate
 3. **Install dependencies:**:
