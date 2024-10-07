@@ -1,8 +1,27 @@
-# pytest cache directory #
+# Chatbot Custom Logger FastAPI
 
-This directory contains data from the pytest's cache plugin,
-which provides the `--lf` and `--ff` options, as well as the `cache` fixture.
+A FastAPI application for logging chatbot and user events to MongoDB.
 
-**Do not** commit this to version control.
+## Requirements
 
-See [the docs](https://docs.pytest.org/en/stable/how-to/cache.html) for more information.
+- Python 3.7+
+- MongoDB
+
+## Installation
+
+1. **Clone the repository**:
+
+   ```bash
+   git clone https://github.com/yourusername/chatbot-custom-logger-fast-api.git
+   cd chatbot-custom-logger-fast-api
+2. **Create and activate a virtual environment**:
+    python -m venv venv
+    # On Windows
+    venv\Scripts\activate
+    (`.\venv\Scripts\activate`)
+    # On macOS/Linux
+    source venv/bin/activate
+3. **Install dependencies:**:
+    pip install -r requirements.txt
+4. **Run the application**:
+    uvicorn app.main:app --reload
