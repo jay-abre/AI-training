@@ -1,6 +1,6 @@
 # Chatbot Custom Logger FastAPI
 
-A FastAPI application for logging chatbot and user events to MongoDB.
+A FastAPI application for custom logging 
 
 ## Requirements
 
