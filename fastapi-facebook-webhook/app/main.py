@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 import httpx
 import json
 
-load_dotenv()  # Load environment variables from .env file
+load_dotenv()  
 
 app = FastAPI()
 
@@ -62,11 +62,11 @@ async def receive_webhook(request: Request):
         webhook_data = await request.json()
         logging.info(f"Received webhook data: {webhook_data}")
 
-        # Insert the raw webhook data into MongoDB
+      
         result = await log_collection.insert_one(webhook_data)
         logging.info(f"Inserted log with ID: {result.inserted_id}")
 
-        # Extract sender_id and message_text for sending a response
+        
         for entry in webhook_data.get("entry", []):
             for messaging in entry.get("messaging", []):
                 sender_id = messaging.get("sender", {}).get("id")
