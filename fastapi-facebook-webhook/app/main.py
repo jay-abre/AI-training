@@ -27,7 +27,7 @@ async def send_message(page_access_token: str, recipient_id: str, message_text: 
         message_type: (string) The type of the target message.
     """
     r = httpx.post(
-        "https://graph.facebook.com/v2.6/me/messages",
+       "https://graph.facebook.com/v16.0/me/messages",
         params={"access_token": page_access_token},
         headers={"Content-Type": "application/json"},
         json={
