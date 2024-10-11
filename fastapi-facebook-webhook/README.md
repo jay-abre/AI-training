@@ -54,14 +54,7 @@ This project is a FastAPI-based webhook service that interacts with Facebook's m
     ```sh
     uvicorn app.main:app --reload
     ```
-
-    The application will be available at `http://127.0.0.1:8000`.
-
 ## Endpoints
 
 - `GET /messaging-webhook`: Verifies the webhook.
 - `POST /messaging-webhook`: Receives and processes incoming webhook data.
-
-## License
-
-This project is licensed under the MIT License.
