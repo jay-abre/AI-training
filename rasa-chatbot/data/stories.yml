@@ -1,0 +1,39 @@
+version: "3.1"
+
+stories:
+
+- story: greet and search for car
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: search_car
+    entities:
+    - car_brand: "Toyota"
+  - action: action_search_car
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: ask for car info
+  steps:
+  - intent: car_info
+    entities:
+    - car_model: "Vios"
+  - action: action_car_info
+
+- story: price inquiry
+  steps:
+  - intent: price_inquiry
+    entities:
+    - car_brand: "Honda"
+    - car_model: "Civic"
+  - action: action_price_inquiry
+
+- story: book test drive
+  steps:
+  - intent: book_test_drive
+  - action: action_book_test_drive
+
+- story: bot challenge
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot

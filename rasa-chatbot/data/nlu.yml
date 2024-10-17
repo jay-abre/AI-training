@@ -1,0 +1,86 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - mano po
+    - kumusta
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you around
+    - see you later
+    - paalam
+    - hanggang sa muli
+
+- intent: search_car
+  examples: |
+    - I'm looking for a [Toyota](car_brand) car
+    - Do you have any [Honda](car_brand) vehicles?
+    - Show me [Mitsubishi](car_brand) cars
+    - I want to see [Ford](car_brand) models
+    - What [Hyundai](car_brand) cars do you have?
+    - Can you show me [Suzuki](car_brand) options?
+    - i want a car
+    - show me cars
+    - i need a vehicle
+    - i want to buy a car
+
+
+- intent: car_info
+  examples: |
+    - Tell me about the [Vios](car_model)
+    - What are the features of [Civic](car_model)?
+    - Give me details on [Mirage](car_model)
+    - Specifications of [Everest](car_model)
+    - What's special about the [Accent](car_model)?
+    - Can you describe the [Ertiga](car_model)?
+    - i want to know more about the car
+    - specs
+    - features
+    - details
+    - tell me more
+
+- intent: price_inquiry
+  examples: |
+    - How much is the [Toyota](car_brand) [Vios](car_model)?
+    - What's the price of a [Honda](car_brand) [Civic](car_model)?
+    - Give me the cost of a [Mitsubishi](car_brand) [Mirage](car_model)
+    - Price range for [Ford](car_brand) [Everest](car_model)
+    - How much do I need to spend on a [Hyundai](car_brand) [Accent](car_model)?
+    - What's the price tag on a [Suzuki](car_brand) [Ertiga](car_model)?
+    - how much is the car
+    - price
+    - cost
+    - how much
+    - how much does it cost
+
+- intent: book_test_drive
+  examples: |
+    - I want to book a test drive
+    - Can I schedule a test drive?
+    - How do I arrange a test drive?
+    - Is it possible to test drive a car?
+    - Book a test drive for me
+    - I'd like to try driving the car
+    - test drive
+    - schedule
+    - arrange
+    - try driving
+    - i want to try
+    
+
+- intent: bot_challenge
+  examples: |
+    - Are you a bot?
+    - Are you a human?
+    - Am I talking to a bot?
+    - Am I talking to a human?

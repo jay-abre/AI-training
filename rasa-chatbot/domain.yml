@@ -1,0 +1,62 @@
+# domain.yml
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - search_car
+  - car_info
+  - price_inquiry
+  - book_test_drive
+  - bot_challenge
+
+entities:
+  - car_brand
+  - car_model
+  - price_range
+
+slots:
+  car_brand:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: car_brand
+  car_model:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: car_model
+  price_range:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: price_range
+
+responses:
+  utter_greet:
+  - text: "Hello! Welcome to our car e-commerce platform. How can I assist you today?"
+
+  utter_goodbye:
+  - text: "Thank you for visiting. Have a great day!"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_ask_car_brand:
+  - text: "Which car brand are you interested in?"
+
+  utter_ask_car_model:
+  - text: "What specific model are you looking for?"
+
+  utter_ask_price_range:
+  - text: "What's your preferred price range?"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+actions:
+  - action_search_car
+  - action_car_info
+  - action_price_inquiry
+  - action_book_test_drive

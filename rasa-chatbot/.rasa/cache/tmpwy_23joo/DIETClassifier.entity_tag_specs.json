@@ -1,0 +1,28 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-car_brand",
+      "2": "I-car_brand",
+      "3": "L-car_brand",
+      "4": "U-car_brand",
+      "5": "B-car_model",
+      "6": "I-car_model",
+      "7": "L-car_model",
+      "8": "U-car_model",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-car_brand": 1,
+      "I-car_brand": 2,
+      "L-car_brand": 3,
+      "U-car_brand": 4,
+      "B-car_model": 5,
+      "I-car_model": 6,
+      "L-car_model": 7,
+      "U-car_model": 8,
+      "O": 0
+    },
+    "num_tags": 9
+  }
+]
